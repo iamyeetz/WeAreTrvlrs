@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div id="wrapper">
+ 
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+           
+            <li class="sidebar-brand text-center">
+                <a href="#">
+                  
+                    <i class="fa fa-map-marker fa-cog" aria-hidden="true"></i>
+                <span class="text-color-white">WeAreTrvls</span>
+                </a>
+            </li>
+
+            <li>
+                <center><img class="ProfileImage" src="~/Images/profile.jpg" /></center>
+            </li>
+            <li class="text-center">
+            <span class="profile-name">Yetz Palisoc</span>
+            </li>
+            <li class="text-center">
+                <a href="#">Dashboard</a>
+            </li>
+            <li class="text-center">
+                <a href="#">Shortcuts</a>
+            </li>
+            <li class="text-center">
+                <a href="#">Overview</a>
+            </li>
+            <li class="text-center">
+                <a href="#">Events</a>
+            </li>
+            <li class="text-center">
+                <a href="#">About</a>
+            </li>
+            <li class="text-center">
+                <a href="#">Services</a>
+            </li>
+            <li class="text-center">
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="content-left" id="main-content">
+            <h2>Index</h2>
+            <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+            <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+            <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
+        </div>
+        <div class="content-right" id="chatlist">
+            <div class="text-center">Chat List</div>
+
+            <div>
+                <ul>
+
+                    <a class="chat-items" href="#"><li><img class="chat-profile-picture" src="~/Images/profile.jpg" />Tom<i class="fa fa-circle fa-online" aria-hidden="true"></i></li></a>
+                    <a class="chat-items" href="#"><li><img class="chat-profile-picture" src="~/Images/profile.jpg" />Ye<i class="fa fa-circle fa-online" aria-hidden="true"></i></li></a>
+                    <a class="chat-items" href="#"><li><img class="chat-profile-picture" src="~/Images/profile.jpg" />Marie<i class="fa fa-circle fa-online" aria-hidden="true"></i></li></a>
+                    <a class="chat-items" href="#"><li><img class="chat-profile-picture" src="~/Images/profile.jpg" />Elaine<i class="fa fa-circle fa-online" aria-hidden="true"></i></li></a>
+                </ul>
+            </div>
+            <div class="footer-chatlist">
+            <input type="text" placeholder="Search"/>
+            </div>
+        </div>
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    <div class="footer" id="footer"></div>
+</div>
+<!-- /#wrapper -->
