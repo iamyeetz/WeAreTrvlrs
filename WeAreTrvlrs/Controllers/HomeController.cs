@@ -22,6 +22,7 @@ namespace WeAreTrvlrs.Controllers
                          orderby a.status descending
                          select a
                          ).ToList();
+            ViewBag.OnlineUsers = table;
             return View(table);
        
         }
@@ -47,7 +48,10 @@ namespace WeAreTrvlrs.Controllers
                          where a.Name.Contains(toSearch)
                          select a
                          ).ToList();
-            return PartialView("_ChatBox",table);
+
+            ViewBag.OnlineUsers = table;
+            return PartialView("_ChatBox");
+           
         }
     }
 }

@@ -11,7 +11,7 @@ body {
 .content-left
 {
 
-    width:50%;
+    width:85%;
     position:absolute;
     left:0;
     top:0;
@@ -20,7 +20,7 @@ body {
 }
 .content-right
 {  position: absolute;
-   width:50%;
+   width:15%;
    top:0;
    right:0;
    background-color:white;

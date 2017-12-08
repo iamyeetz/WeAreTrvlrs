@@ -13,7 +13,7 @@
         <!-- Custom styles for this template -->
         <link href="/Content/css/simple-sidebar.css" rel="stylesheet">
           <!-- Bootstrap core JavaScript -->
-
+        <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
         <link href="~/Content/css/font-awesome.css" rel="stylesheet" />
         <link href="~/Content/css/MyStyle.css" rel="stylesheet" />
     </head>
@@ -28,7 +28,7 @@
                 x = 0;
                 chatWindowCount = 0;
             
-
+   
 
                     $(".chat-items").click(function (e) {
                         var txt = $(e.target).text();
@@ -45,7 +45,7 @@
                 // brad paano iuupdate lang ung partial view na yon. hahaha nahihirapan na ako magisip -_- </3
                     $(".chat-list-search").keyup(function () {
                         var toSearch = $(".chat-list-search").val();
-                        alert(toSearch);
+                       
                    
                         $.ajax({
                             type: "GET",
@@ -53,15 +53,16 @@
                             dataType: 'html',
                             contentType: 'application/html; charset=utf-8',
                             success: function (partialViewResult) {
-                                $(".content-right").html(partialViewResult);
+                                $(".chat-list-body").html(partialViewResult);
                             },
                         });
+
                         //xmlhttp.open("GET", "getuser.php?q=" + str, true);
                         //xmlhttp.send();
                     
                     });
 
-
+     
 
                 // hovering chat items handler
                     $(".chat-user-name").hover(function (e) {

@@ -1,14 +1,9 @@
 ﻿
-@model IEnumerable<WeAreTrvlrs.Model.OnlineUsers>
-
-
-<div class="content-right" id="chatlist">
-    <div class="text-center chat-list-header">Chat List</div>
 
     <div class="chat-list-body">
         
 
-            @foreach (var x in Model)
+            @foreach (var x in ViewBag.OnlineUsers)
             {
                 <div class="chat-item" id="@x.ID">
                     <div class="chat-user-image">
@@ -34,10 +29,27 @@
 
   
     </div>
-    <div class="footer-chatlist">
-        <input type="text" placeholder="Search" class="chat-list-search" />
-    </div>
-</div>
+
+
+@*<script>
+    function myFunction() {
+
+
+            var toSearch = $(".chat-list-search").val();
+            alert(toSearch);
+                   
+        $.ajax({
+            type: "GET",
+            url: '@Url.Action("SearchFriends", "Home")' + "/?toSearch=" + toSearch,
+            dataType: 'html',
+            contentType: 'application/html; charset=utf-8',
+            success: function (partialViewResult) {
+                $(".content-right").html(partialViewResult);
+            },
+        });
+
+    }
+</script>*@
 
 
 

@@ -61,11 +61,20 @@
             <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
         </div>
   
-  
-    @Html.Partial("_ChatBox", Model)
 
+        <div class="content-right" id="chatlist">
+            <div class="text-center chat-list-header">Chat List</div>
 
-    </div> 
+            <div class="chat-list-body">
+                @Html.Partial("_ChatBox", Model)
+            </div>
+
+                <div class="footer-chatlist">
+                    <input type="text" placeholder="Search" class="chat-list-search" id="Search" />
+                </div>
+            </div>
+
+        </div> 
     <!-- /#page-content-wrapper -->
 
     <div class="footer" id="footer"></div>
