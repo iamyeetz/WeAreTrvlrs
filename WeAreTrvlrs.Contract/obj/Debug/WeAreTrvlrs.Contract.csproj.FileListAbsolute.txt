@@ -1,0 +1,4 @@
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.Contract\bin\Debug\WeAreTrvlrs.Contract.dll
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.Contract\bin\Debug\WeAreTrvlrs.Contract.pdb
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.Contract\obj\Debug\WeAreTrvlrs.Contract.dll
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.Contract\obj\Debug\WeAreTrvlrs.Contract.pdb

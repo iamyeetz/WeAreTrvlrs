@@ -1,4 +1,6 @@
-﻿
+﻿@model IEnumerable<WeAreTrvlrs.Model.OnlineUsers>
+
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -58,24 +60,12 @@
             <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
             <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
         </div>
-        <div class="content-right" id="chatlist">
-            <div class="text-center">Chat List</div>
+  
+  
+    @Html.Partial("_ChatBox", Model)
 
-            <div>
-                <ul>
 
-                    <a class="chat-items" href="#"><li><img class="chat-profile-picture" src="~/Images/profile.jpg" />Tom<i class="fa fa-circle fa-online" aria-hidden="true"></i></li></a>
-                    <a class="chat-items" href="#"><li><img class="chat-profile-picture" src="~/Images/profile.jpg" />Ye<i class="fa fa-circle fa-online" aria-hidden="true"></i></li></a>
-                    <a class="chat-items" href="#"><li><img class="chat-profile-picture" src="~/Images/profile.jpg" />Marie<i class="fa fa-circle fa-online" aria-hidden="true"></i></li></a>
-                    <a class="chat-items" href="#"><li><img class="chat-profile-picture" src="~/Images/profile.jpg" />Elaine<i class="fa fa-circle fa-online" aria-hidden="true"></i></li></a>
-                </ul>
-            </div>
-            <div class="footer-chatlist">
-            <input type="text" placeholder="Search"/>
-            </div>
-        </div>
-
-    </div>
+    </div> 
     <!-- /#page-content-wrapper -->
 
     <div class="footer" id="footer"></div>

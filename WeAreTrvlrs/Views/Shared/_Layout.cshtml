@@ -29,50 +29,82 @@
                 chatWindowCount = 0;
             
 
-                $(".chat-items").click(function (e) {
-                    var txt = $(e.target).text();
+
+                    $(".chat-items").click(function (e) {
+                        var txt = $(e.target).text();
                     
-                    if (document.getElementById("chat"+txt)) {
-                        alert('this record already exists');
-                    } else {
-                        $(".footer").append("<div id='chat" + txt + "'class='chatbox'></div>");
-                        $("#chat" + txt).html(txt);
-                    }
+                        if (document.getElementById("chat"+txt)) {
+                            alert('this record already exists');
+                        } else {
+                            $(".footer").append("<div id='chat" + txt + "'class='chatbox'></div>");
+                            $("#chat" + txt).html(txt);
+                        }
     
-                });
+                    });
                 
-                $(".chatbox").hover(function (e) {
-                    var txt = $(e.target).text();
-                    $("#chat" + txt).append("<p>aw</p>");
+                // brad paano iuupdate lang ung partial view na yon. hahaha nahihirapan na ako magisip -_- </3
+                    $(".chat-list-search").keyup(function () {
+                        var toSearch = $(".chat-list-search").val();
+                        alert(toSearch);
+                   
+                        $.ajax({
+                            type: "GET",
+                            url: '@Url.Action("SearchFriends", "Home")' + "/?toSearch=" + toSearch,
+                            dataType: 'html',
+                            contentType: 'application/html; charset=utf-8',
+                            success: function (partialViewResult) {
+                                $(".content-right").html(partialViewResult);
+                            },
+                        });
+                        //xmlhttp.open("GET", "getuser.php?q=" + str, true);
+                        //xmlhttp.send();
                     
-
-                }, function () {
-
-
-                });
+                    });
 
 
 
-                $("#menu-toggle").click(function (e) {
-                    e.preventDefault();
-                    $("#wrapper").toggleClass("toggled");
+                // hovering chat items handler
+                    $(".chat-user-name").hover(function (e) {
+                        var id =  $(this).parent().attr('id');
 
-                    if (x == 0) {
-                        $("#chatlist").hide();
-                        $("#main-content").css("width", "100%");
-                        $(".footer").css("width", "100%");    
-                        x = 1;
+                        $("#" + id + " .chat-user-name").css("cursor", "pointer");
+             
+                        $("#" + id + " .chat-user-image").css("background-color", "#e9e9e9");
+                        $("#" + id + " .chat-user-name").css("background-color", "#e9e9e9");
+                        $("#" + id + " .chat-user-status").css("background-color", "#e9e9e9");
+
+                    }, function (e) {
+                        var id = $(this).parent().attr('id');
+                        $("#" + id + " .chat-user-name").css("cursor", "default");
+
+                        $("#" + id + " .chat-user-image").css("background-color", "white");
+                        $("#" + id + " .chat-user-name").css("background-color", "white");
+                        $("#" + id + " .chat-user-status").css("background-color", "white");
+                    });
+                // end of hovering chat items handler
+
+                    $("#menu-toggle").click(function (e) {
+                        e.preventDefault();
+                        $("#wrapper").toggleClass("toggled");
+
+                        if (x == 0) {
+                            $("#chatlist").hide();
+                            $("#main-content").css("width", "100%");
+                            $(".footer").css("width", "100%");    
+                            x = 1;
                       
-                    }
-                    else {
-                       // $("#chatlist").delay(500).show(0)
-                        $("#chatlist").animate({ width: 'toggle' }, 350);
-                        $("#main-content").css("width", "100%");
-                        $(".footer").css("width", "85%");
-                        x = 0;
-                    }
+                        }
+                        else {
+                           // $("#chatlist").delay(500).show(0)
+                            $("#chatlist").animate({ width: 'toggle' }, 350);
+                            $("#main-content").css("width", "100%");
+                            $(".footer").css("width", "85%");
+                            x = 0;
+                        }
 
-                });
+                    });
+
+
             });
   
    

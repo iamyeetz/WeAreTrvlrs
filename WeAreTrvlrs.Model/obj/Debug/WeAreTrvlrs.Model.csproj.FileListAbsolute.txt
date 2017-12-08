@@ -1,0 +1,5 @@
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.Model\bin\Debug\WeAreTrvlrs.Model.dll
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.Model\bin\Debug\WeAreTrvlrs.Model.pdb
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.Model\obj\Debug\WeAreTrvlrs.Model.csprojResolveAssemblyReference.cache
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.Model\obj\Debug\WeAreTrvlrs.Model.dll
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.Model\obj\Debug\WeAreTrvlrs.Model.pdb

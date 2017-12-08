@@ -1,0 +1,16 @@
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.DAL\bin\Debug\WeAreTrvlrs.DAL.dll
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.DAL\bin\Debug\WeAreTrvlrs.DAL.pdb
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.DAL\obj\Debug\WeAreTrvlrs.DAL.dll
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.DAL\obj\Debug\WeAreTrvlrs.DAL.pdb
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.DAL\bin\Debug\WeAreTrvlrs.DAL.dll.config
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.DAL\bin\Debug\EntityFramework.dll
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.DAL\bin\Debug\WeAreTrvlrs.Model.dll
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.DAL\bin\Debug\WeAreTrvlrs.Model.pdb
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.DAL\bin\Debug\EntityFramework.xml
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.DAL\obj\Debug\WeAreTrvlrs.DAL.csprojResolveAssemblyReference.cache
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.DAL\obj\Debug\WeAreTrvlrs.DAL.Migrations.initial.resources
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.DAL\obj\Debug\WeAreTrvlrs.DAL.csproj.GenerateResource.Cache
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.DAL\bin\Debug\WeAreTrvlrs.Contract.dll
+C:\Users\ChristopherMPalisoc\Desktop\CMP_ASP\WeAreTrvlrs\WeAreTrvlrs.DAL\bin\Debug\WeAreTrvlrs.Contract.pdb

@@ -1,0 +1,45 @@
+﻿
+@model IEnumerable<WeAreTrvlrs.Model.OnlineUsers>
+
+
+<div class="content-right" id="chatlist">
+    <div class="text-center chat-list-header">Chat List</div>
+
+    <div class="chat-list-body">
+        
+
+            @foreach (var x in Model)
+            {
+                <div class="chat-item" id="@x.ID">
+                    <div class="chat-user-image">
+                       <img src="~/Images/profile.jpg" />
+                    </div>
+                    <div class="chat-user-name">
+                        <p>@x.Name</p>
+                    </div>
+                    <div class="chat-user-status">
+                        @if (x.status == 1)
+                        {
+                        <p><i class="fa fa-circle online" aria-hidden="true" style="font-size:10px;color:green;"></i></p>
+                        }
+                        else
+                        {
+                        <p><i class="fa fa-circle online" aria-hidden="true" style="font-size:10px;color:black;"></i></p>
+                        }
+                    </div>
+                </div>
+               
+            }
+
+
+  
+    </div>
+    <div class="footer-chatlist">
+        <input type="text" placeholder="Search" class="chat-list-search" />
+    </div>
+</div>
+
+
+
+
+
