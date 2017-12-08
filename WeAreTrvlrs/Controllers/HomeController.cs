@@ -46,6 +46,7 @@ namespace WeAreTrvlrs.Controllers
             DataContext dbContext = new DataContext();
             var table = (from a in dbContext.OnlineUsers
                          where a.Name.Contains(toSearch)
+                         orderby a.status descending
                          select a
                          ).ToList();
 
